@@ -17,7 +17,9 @@ jobs:
       - name: Use the input
         run: echo "My input is ${{ steps.my_input.outputs.my_input }}"
         # Now you can use the input value in subsequent steps.
-
+      - name: checkout
+        uses: checkout@actions/v4
+      
       - name: Run workflow with input
         uses: ./.github/workflows/sendemail.yml
         with:
