@@ -19,6 +19,6 @@ jobs:
         # Now you can use the input value in subsequent steps.
 
       - name: Run workflow with input
-        uses: ./.github/workflows/testinput.yml
+        uses: ./.github/workflows/sendemail.yml
         with:
           my_input: 'value_here'
